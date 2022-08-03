@@ -1,0 +1,26 @@
+﻿<Window x:Class="ICE1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ICE1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="658" Width="875">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="67*"/>
+            <ColumnDefinition Width="13*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Home Page" HorizontalAlignment="Left" Margin="364,81,0,0" VerticalAlignment="Top" Height="26" Width="71"/>
+        <Label Content="Name:" HorizontalAlignment="Left" Margin="191,161,0,0" VerticalAlignment="Top" Height="26" Width="44"/>
+        <Label Content="Age:" HorizontalAlignment="Left" Margin="191,187,0,0" VerticalAlignment="Top" Height="26" Width="34"/>
+        <Label Content="Gender:" HorizontalAlignment="Left" Margin="191,213,0,0" VerticalAlignment="Top" Height="26" Width="51"/>
+        <TextBox x:Name="tbName" HorizontalAlignment="Left" Margin="364,161,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="18"/>
+        <TextBox x:Name="tbAge" HorizontalAlignment="Left" Margin="364,187,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="18"/>
+        <TextBox x:Name="tbGender" HorizontalAlignment="Left" Margin="364,221,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Height="18"/>
+        <Button x:Name="btnSubmit" Content="Enter" Grid.Column="1" HorizontalAlignment="Left" Margin="10,359,0,0" VerticalAlignment="Top" Height="20" Width="31" Click="btnSubmit_Click"/>
+        <ListBox x:Name="lstDisplay" Grid.ColumnSpan="2" HorizontalAlignment="Left" Height="215" Margin="97,417,0,0" VerticalAlignment="Top" Width="733"/>
+        <Button x:Name="btnstore" Content="Store" HorizontalAlignment="Left" Margin="597,359,0,0" VerticalAlignment="Top" Click="btnstore_Click"/>
+
+    </Grid>
+</Window>
